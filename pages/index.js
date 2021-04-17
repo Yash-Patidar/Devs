@@ -13,11 +13,13 @@ export default function Home() {
       <Main />
       <Web />
       {/* <Service /> */}
+          
       <a NAME="Contact"></a>
       <Contact />
       <a NAME="About"></a>
       <About />
       <Footer />
+      {/* Made by Yash patidar */}
     </>
   );
 }
