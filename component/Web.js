@@ -131,7 +131,6 @@ const Block = styled.div`
   background-color: #ffa726;
   color: whitesmoke;
   width: 20vw;
-  height: 40vh;
   margin: 1rem;
   border-radius: 15%;
 
