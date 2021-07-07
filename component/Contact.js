@@ -4,6 +4,10 @@ import EmailIcon from "@material-ui/icons/Email";
 import CallIcon from "@material-ui/icons/Call";
 
 function Contact() {
+  function myFunction () {
+    alert('Thank You')
+  }
+  
   return (
     <>
       <Head>Contact Us</Head>
@@ -27,15 +31,14 @@ function Contact() {
             />
 
             <label for="msg">Massage</label>
-            <Select
-              style={{ height: "10vw" }}
-              type="text"
-              id="msg"
-              name="Msg"
-              placeholder="Your Massage..."
+          <Selects
+              style={{ height: '10vw' }}
+              type='text'
+              id='msg'
+              name='Msg'
+              placeholder='Your Massage...'
             />
-
-            <Submit value="Submit" />
+            <Submit type='submit' value='Submit' onclick='myFunction()' />
           </form>
         </Block>
 
@@ -113,6 +116,16 @@ const Select = styled.input`
   border-radius: 4px;
   box-sizing: border-box;
 `;
+
+const Selects = styled.textarea`
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+`
 
 const Head = styled.h3`
   color: #778696;
